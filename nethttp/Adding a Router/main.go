@@ -14,6 +14,7 @@ func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 }
 
 func main() {
+	// routerは、Handlerインターフェースを実装している
 	router := httprouter.New()
 	router.GET("/:path", Index)
 
